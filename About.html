@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HotWheels</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <div class="text-box">
+            <h1>Home of the Fastest Cars</h1>
+            <p>It's Not The Same Without The Flame</p>  
+            <a href="https://shop.mattel.com/pages/hot-wheels" class="hero-btn">Visit Us To know More</a>
+        </div>
+    </section>
+
+    <!-------Toys---------> 
+    
+    <!-------Locations---------> 
+   
+    <!-------Reviews--------->
+    
+
+     <!-- Contact Section -->
+
+      <!-- Footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Hot Wheels is an American brand of scale model cars invented by Elliot Handler and introduced by his company Mattel on<br> May 18, 1968. It was the primary competitor of Matchbox until Mattel bought Matchbox owner Tyco Toys in 1997.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-square" ></i>
+            <i class="fa fa-twitter-square" ></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube-square"></i>
+        </div>
+        <p>&copy; 2024 Mattel. All rights reserved.</p>
+    </section>
+     
+
+    <!-------JavaScript For menu---------> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
