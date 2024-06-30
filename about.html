@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HotWheels</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- About Us content -->
+
+    <section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>History</h1>
+            <p>Elliot Handler, co-founder of Mattel, decided to create a series of die-cast toy cars for boys. His idea was to capture a part of the huge market for small car models that was then dominated by the British company Lesney Products with Matchbox cars. In 1968, 16 cast models were released, 11 of which were designed by Harry Bentley Bradley, and the first produced model was a dark blue custom Camaro. All 16 had "Spectraflame" paint, bearings, Redline wheels, and working suspension. "Hot pink" was not often used on Hot Wheels cars because it was considered a "girl color". To make the cars run quickly on the plastic tracks, Mattel chose a cheap, durable, low-friction plastic called Delrin for the bushings between the axles and the wheels. The "torsion bar" suspension was simple but flawed. Inside the cars, the axles were connected to the chassis in a "C"-like shape. When you pushed down, the axles flexed just like a real car. It was the combination of all these elements -- speed, with the low-friction wheel/axle assemblies and racing tires, looks, with the Spectraflame paint and magnesium rims, and the incorporation of very American themes like hot rod designs based on real American prototypes found in numerous competitors' product lines, that laid the foundation for Hot Wheels' incredible success story.</p>
+            <a href="https://www.hotwheelsonline.com/mattel-designers--artists.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/Elliot.jpg">
+        </div>
+    </div>
+</section>
+
+
+
+      <!-- Footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Hot Wheels is an American brand of scale model cars invented by Elliot Handler and introduced by his company Mattel on<br> May 18, 1968. It was the primary competitor of Matchbox until Mattel bought Matchbox owner Tyco Toys in 1997.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-square" ></i>
+            <i class="fa fa-twitter-square" ></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube-square"></i>
+        </div>
+        <p>&copy; 2024 Mattel. All rights reserved.</p>
+    </section>
+     
+
+    <!-------JavaScript For menu---------> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

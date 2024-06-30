@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HotWheels</title>
+</head>
+<body>
+    <section class="sub-header2">
+        <nav>
+            <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <h1>Product</h1>
+    </section>
+    
+    <section class="product">
+        <div class="gallery">
+            <div class="content">
+                <img src="images/F40.jpg" alt="Product Image">
+                <h3>Ferrari F40</h3>
+                <p>One of the most iconic cars in Hot Wheels history. Perfect for collectors and enthusiasts.</p>
+                <span class="price">$76.99</span>
+                <a href="https://www.lazada.com.ph/products/mechanical-group-10248-super-racing-f40-red-ferrari-488gte-sports-car-lego-42125-educational-building-block-i4210778980-s23364834447.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Alego%252Btechnic%252Bferrari%252Bf40%253Bnid%253A4210778980%253Bsrc%253ALazadaMainSrp%253Brn%253Abcf7521878fb6c1f5dbde15b96a57740%253Bregion%253Aph%253Bsku%253A4210778980_PH%253Bprice%253A4744.06%253Bclient%253Adesktop%253Bsupplier_id%253A500652864726%253Bbiz_source%253Ah5_internal%253Bslot%253A6%253Butlog_bucket_id%253A470687%253Basc_category_id%253A18817%253Bitem_id%253A4210778980%253Bsku_id%253A23364834447%253Bshop_id%253A4990357&fastshipping=0&freeshipping=0&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila&price=4744.06&priceCompare=skuId%3A23364834447%3Bsource%3Alazada-search-voucher%3Bsn%3Abcf7521878fb6c1f5dbde15b96a57740%3BunionTrace%3Aa131152817197169131095081e%3BoriginPrice%3A474406%3BvoucherPrice%3A474406%3BdisplayPrice%3A474406%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3Btimestamp%3A1719716913509&ratingscore=&request_id=bcf7521878fb6c1f5dbde15b96a57740&review=&sale=2&search=1&source=search&spm=a2o4l.searchlist.list.6&stock=1" class="btn">Buy Now</a>
+            </div>
+            <div class="content">
+                <img src="images/FNF.jpg" alt="Product Image">
+                <h3>Fast and the Furious Collection</h3>
+                <p>A collaboration from the movie Fast and the Furious.</p>
+                <span class="price">$44.99</span>
+                <a href="https://www.amazon.com/Hot-Wheels-Premium-Collectors-HJC15/dp/B09NRWPX29?shipTo=PH&source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A27PUDN7TK4ZRQ&language=en_US" class="btn">Buy Now</a>
+            </div>
+            <div class="content">
+                <img src="images/Accelerators_.jpg" alt="Product Image">
+                <h3>Accelerators</h3>
+                <p>A movie CD which includes a toy car from the movies.</p>
+                <span class="price">$14.99</span>
+                <a href="https://www.amazon.com/Hot-Wheels-Acceleracers-Ignition-Various/dp/B0007N19BO" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Hot Wheels is an American brand of scale model cars invented by Elliot Handler and introduced by his company Mattel on<br> May 18, 1968. It was the primary competitor of Matchbox until Mattel bought Matchbox owner Tyco Toys in 1997.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-square" ></i>
+            <i class="fa fa-twitter-square" ></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube-square"></i>
+        </div>
+        <p>&copy; 2024 Mattel. All rights reserved.</p>
+    </section>
+    
+    <!-------JavaScript For menu---------> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
