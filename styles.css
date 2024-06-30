@@ -355,7 +355,7 @@ h3{
 
 
 }
-/*-----About Us----*/
+
 
 /*-----About Us----*/
 
@@ -408,3 +408,93 @@ h3{
 .red-btn:hover{
     color: #fff;
 }
+
+/*-----About Us----*/
+
+.sub-header2 {
+    height: 50vh; 
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header2 h1 {
+    margin-top: 70px; 
+}
+
+/*-----Product----*/
+/* Product Page */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: calc(33% - 20px);
+}
+
+.content:hover {
+    transform: translateY(-10px);
+}
+
+.content img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.content h3 {
+    margin: 15px 0;
+}
+
+.content p {
+    padding: 0 15px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e63900;
+}
+
+.price {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content {
+        width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+    }
+}
+
